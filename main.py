@@ -1545,7 +1545,7 @@ async def GMG_check_loop(bot_username: str):
                 await restart_bot()
 
         except Exception as e:
-            logger.error(f"Error in frozen_check_loop: {e}")
+            logger.error(f"Error in gmg_check_loop: {e}")
 
         await asyncio.sleep(60)
 
