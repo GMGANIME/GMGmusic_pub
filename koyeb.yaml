@@ -1,0 +1,25 @@
+services:
+  - name: GMG-music-bot
+    git:
+      repo: "https://github.com/GMGANIME/GMGmusic_pub"
+      branch: main
+    dockerfile_path: Dockerfile
+    routes:
+      - name: web
+        path: "/"
+    ports:
+      - 8080
+    instance_type: micro
+    env:
+      API_HASH: ""
+      API_ID: ""
+      ASSISTANT_SESSION: ""
+      BOT_TOKEN: ""
+      OWNER_ID: ""
+      MongoDB_url: ""
+      UPDATES_CHANNEL: ""
+      SUPPORT_GROUP: ""
+      START_ANIMATION: ""
+
+
+
