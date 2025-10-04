@@ -1579,8 +1579,8 @@ if __name__ == "__main__":
     logger.info(f"✅ Bot Username: {BOT_USERNAME}")
     logger.info(f"✅ Bot Link: {BOT_LINK}")
 
-    # start the GMG‑check loop (no handler registration needed)
-    asyncio.get_event_loop().create_task(GMG_check_loop(BOT_USERNAME))
+    # start the gmg‑check loop (no handler registration needed)
+    asyncio.get_event_loop().create_task(gmg_check_loop(BOT_USERNAME))
 
     if not assistant.is_connected:
         logger.info("Assistant not connected; starting assistant client...")
